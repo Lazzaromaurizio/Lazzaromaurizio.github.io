@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sidebar"
+    "content"
+    "footer"
+    ;
+    grid-template-rows: 50px auto 1fr auto;
+}
+
+header, footer {
+    background-color: lightgreen;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    background-color: lightsalmon;
+    grid-area: sidebar;
+}
+
+main {
+    background-color: lightcoral;
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media(min-width: 768px) {
+    body {
+        grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer"
+    ;
+        grid-template-rows: 50px 1fr auto;
+        grid-template-columns: 1fr 2fr;
+    }
+}

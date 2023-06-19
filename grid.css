@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: chartreuse;
+}
+
+main {
+    background-color: beige;
+}
+
+footer {
+    background-color: yellow;
+} 
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
